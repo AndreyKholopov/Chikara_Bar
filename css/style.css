@@ -239,6 +239,9 @@ main#price-menu .price-descr .price:hover {
   background: #2b2b2b;
   transition: all 1.2s ease-out;
 }
+main#contact p {
+  margin: 10px;
+}
 
 @media screen and (min-width: 1171px) {
   main#price-menu .price-descr {
@@ -330,6 +333,16 @@ div.menu-logo.Show {
   }
   main#price-menu .price-descr {
     grid-template-columns: 1fr;
+  }
+  main#contact h1 {
+    margin-top: 10vh;
+    font-size: 4rem;
+  }
+  main#contact iframe {
+    height: 200px;
+  }
+  main#contact p {
+    font-size: 1.1rem;
   }
 }
 
