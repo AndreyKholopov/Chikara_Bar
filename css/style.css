@@ -200,7 +200,27 @@ main#home {
 main#home h1 {
   margin-top: 20vh;
 }
+main .about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .about-info .about-image {
+  margin-top: 10px;
+  border: solid 5px #ffcbdb;
+  border-radius: 20%;
+  margin-bottom: 20px;
+}
+main .about-info p {
+  text-indent: 25px;
+  margin-bottom: 10px;
+}
 
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .about-image {
+    width: 700px;
+  }
+}
 @media screen and (max-width: 768px) {
   main {
     align-items: center;
@@ -236,9 +256,13 @@ div.menu-logo.Show {
     width: 125px;
     height: 125px;
   }
+
+  .about-image {
+    width: 450px;
+  }
 }
 @media screen and (max-width: 500px) {
-  main#home {
+  main {
     padding: 2rem;
   }
   main#home h1 {
@@ -254,6 +278,16 @@ div.menu-logo.Show {
   }
   main .phones a {
     padding: 3px;
+  }
+  main#about h1 {
+    margin-top: 10vh;
+    font-size: 4rem;
+  }
+  main#about .about-image {
+    width: 290px;
+  }
+  main#about p {
+    font-size: 1.1rem;
   }
 }
 
