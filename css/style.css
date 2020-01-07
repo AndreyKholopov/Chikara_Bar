@@ -215,7 +215,36 @@ main .about-info p {
   text-indent: 25px;
   margin-bottom: 10px;
 }
+main#price-menu .price-descr {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+main#price-menu .price-descr img {
+  width: 100%;
+  background: #fff;
+  border: 3px #ffcbdb solid;
+}
+main#price-menu .price-descr img:hover {
+  opacity: 0.5;
+  transition: all 1.2s ease-out;
+}
+main#price-menu .price-descr .price {
+  margin-top: 0.5rem;
+  display: block;
+  text-align: center;
+  background: #565656;
+}
+main#price-menu .price-descr .price:hover {
+  background: #2b2b2b;
+  transition: all 1.2s ease-out;
+}
 
+@media screen and (min-width: 1171px) {
+  main#price-menu .price-descr {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-image {
     width: 700px;
@@ -225,6 +254,9 @@ main .about-info p {
   main {
     align-items: center;
     text-align: center;
+  }
+  main#price-menu .price-descr {
+    grid-template-columns: repeat(2, 1fr);
   }
   main .logo-heading {
     line-height: 1;
@@ -288,6 +320,16 @@ div.menu-logo.Show {
   }
   main#about p {
     font-size: 1.1rem;
+  }
+  main#price-menu h1 {
+    margin-top: 10vh;
+    font-size: 4rem;
+  }
+  main#price-menu h2 {
+    font-size: 1.1rem;
+  }
+  main#price-menu .price-descr {
+    grid-template-columns: 1fr;
   }
 }
 
